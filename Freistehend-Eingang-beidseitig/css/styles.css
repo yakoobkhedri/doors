@@ -7,7 +7,6 @@ body {
   position: fixed;
   background: rgb(220, 220, 230);
   top: 25mm;
-  bottom: 249px;
   left: 78mm;
   width: 16mm;
   height: 100mm;
@@ -26,7 +25,6 @@ body {
   position: fixed;
   background: rgb(220, 220, 230);
   top: 41mm;
-  bottom: 249px;
   left: 125mm;
   width: 16mm;
   height: 100mm;
@@ -45,7 +43,6 @@ body {
   background: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
   top: 36mm;
-  bottom: 249px;
   left: 78mm;
   width: 47mm;
   height: 100mm;

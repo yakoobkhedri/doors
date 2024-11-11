@@ -4,38 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
   <title>Home</title>
 </head>
 
 <body>
 
-  <main class="h-100">
-
-   <section class="h-100">
-    <div class="container-fluid h-100">
-      <div class="row gx-3 mx-0 h-100">
-        <div class="col-9 position-relative">
-         <div>
-           <div>
-              <div id="GlasLeft"></div>
-              <div id="GlasFront"></div>
-              <div id="GlasFront2"></div>
-              <div id="GlasRight"></div>
-           </div>
-           <h5 class="fw-bold text-center bottom-26 end-0 start-0 text-center position-absolute mb-5 pb-5">Doppeltur</h5>
-         </div>
+    <div class="container-fluid vh-100">
+      <div class="row p-3" dir="rtl">
+        <div class="col-lg-3" id="leftPanel" dir="ltr">
+          <form class="d-flex flex-column gap-3 border-1 border p-3 rounded">
+            <p>Steel | Line Variante 2</p>
+            <!-- right glass -->
+            <div class="d-none flex-column gap-2">
+              <p id="textaa" style="display:block">right glass in mm</br> (min. 150mm max. 1500mm)</p>
+              <input min="150" max="1500" type="number" class="form-control width-input" name="width" id="right" />
+            </div>
+            <!-- front glass -->
+            <div class="d-flex flex-column gap-2">
+              <p id="textaa" style="display:block">front glass in mm</br> (min. 150mm max. 1500mm)</p>
+              <input min="150" max="1500" type="number" class="form-control width-input" name="widthFL" id="front" />
+            </div>
+            <!-- left glass -->
+            <div class="d-flex flex-column gap-2">
+              <p id="textaa" style="display:block">left glass in mm</br> (min. 150mm max. 1500mm)</p>
+              <input min="150" max="1500" style="display:block" type="number" class="form-control width-input" name="widthh" id="left" />
+            </div>
+            <!-- height -->
+            <div class="d-flex flex-column gap-2">
+              <p id="textaa2" style="display:Block">height in mm</br> (min. 1200mm max. 3000mm)</p>
+              <input min="1200" max="3000" style="display:block" style="display:Block" type="number" class="form-control height-input"
+                name="height" id="height" value="2000" />
+            </div>
         </div>
-        <div class="col-3"></div>
+        <!--Bild Background-->
+        <div class="col-lg-9 d-flex align-items-center align-content-center" id="rightPanel">
+          <div>
+            <div>
+               <div id="GlasLeft"></div>
+               <div id="GlasFront"></div>
+               <div class="d-none" id="GlasRight"></div>
+            </div>
+            <h5 class="fw-bold text-center bottom-26 end-0 start-0 text-center position-absolute mb-5 pb-5">Doppeltur</h5>
+          </div>
+        </div>
       </div>
     </div>
-   </section>
 
-  </main>
 
-  <script src="scripts.js"></script>
-  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
