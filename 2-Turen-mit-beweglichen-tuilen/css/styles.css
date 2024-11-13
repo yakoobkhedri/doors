@@ -1,0 +1,79 @@
+body {
+  height: 100vh;
+}
+
+#GlasLeft {
+  position: fixed;
+  background: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  top: 18.4mm;
+  left: 147mm;
+  width: 19mm;
+  height: 100mm;
+  transform: skewY(-20deg);
+  display: block;
+  background-color: #D2E9E0;
+  opacity: 0.5;
+  border-style: solid;
+  border-color: #98CEAE;
+  border-width: 2px;
+}
+
+#GlasRight {
+  position: fixed;
+  background: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  top: 18.5mm;
+  left: 90.4mm;
+  width: 19mm;
+  height: 100mm;
+  transform: skewY(20deg);
+  display: block;
+  background-color: #D2E9E0;
+  opacity: 0.5;
+  border-style: solid;
+  border-color: #98CEAE;
+  border-width: 2px;
+}
+
+#GlasFront {
+  position: fixed;
+  background: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  top: 25.4mm;
+  left: 109.2mm;
+  width: 19mm;
+  height: 100mm;
+  transform: skewY(20deg);
+  display: block;
+  background-color: #D2E9E0;
+  opacity: 0.5;
+  border-style: solid;
+  border-color: #98CEAE;
+  border-width: 2px;
+}
+
+#GlasFront2 {
+  position: fixed;
+  background: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  top: 25.4mm;
+  left: 128mm;
+  width: 19mm;
+  height: 100mm;
+  transform: skewY(-20deg);
+  display: block;
+  background-color: #D2E9E0;
+  opacity: 0.5;
+  border-style: solid;
+  border-color: #98CEAE;
+  border-width: 2px;
+}
+
+.bottom-26 {
+  bottom: 26px;
+}
