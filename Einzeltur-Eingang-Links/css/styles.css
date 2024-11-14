@@ -12,7 +12,7 @@ body {
   background-color: rgb(220, 220, 230);
   top: 41.5mm;
   bottom: 249px;
-  left: 78mm;
+  right: 165mm;
   width: 47mm;
   height: 100mm;
   transform: skewY(19deg);
@@ -30,7 +30,7 @@ body {
   background: rgb(220, 220, 230);
   top: 24mm;
   bottom: 249px;
-  left: 125mm;
+  right: 118mm;
   width: 47mm;
   height: 100mm;
   transform: skewY(20deg);
@@ -48,7 +48,7 @@ body {
   background: rgb(220, 220, 230);
   top: 41mm;
   bottom: 249px;
-  left: 125mm;
+  right: 118mm;
   width: 47mm;
   height: 100mm;
   transform: skewY(-20deg);

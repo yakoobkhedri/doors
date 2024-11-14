@@ -21,7 +21,7 @@ function changeSize() {
     size_terstll = size_left / 5;
 
     GlasRight.style.top = 55 + size_terstR + 'mm';
-    GlasRight.style.left = 78 + size_front + 'mm';
+    GlasRight.style.right = 78 + size_front + 'mm';
 
     GlasFront.style.height = size_height + 'mm';
     GlasFront.style.width = size_front + 'mm';
