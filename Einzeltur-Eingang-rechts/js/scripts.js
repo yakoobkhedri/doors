@@ -19,13 +19,13 @@ function changeSize() {
     size_terst = size_right / 5;
     size_terstR = size_front / 5;
     size_terstll = size_left / 5;
-
-    GlasRight.style.top = 55 + size_terstR + 'mm';
-    GlasRight.style.right = 78 + size_front + 'mm';
-
+    
     GlasFront.style.height = size_height + 'mm';
     GlasFront.style.width = size_front + 'mm';
     GlasFront.style.top = 56 + size_terst + 'mm';
+    
+    GlasRight.style.top = 55 + size_terstR + 'mm';
+    GlasRight.style.right = 78 + size_front + 'mm';
 
     // شیشه سمت چپ را باید تست بکنی وبراش ایف بزنی
 
