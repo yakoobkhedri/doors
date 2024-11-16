@@ -2,41 +2,42 @@ body {
   height: 100vh;
 }
 
-#GlasLeft {
+.galsessCont {
   position: fixed;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  transform: translate(-50%, -50%) skewY(-20deg);
+  transform-origin: center;
+}
+
+#GlasLeft {
   background: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
-  top: 38.4mm;
-  left: 91.4mm;
-  width: 24mm;
-  height: 100mm;
-  transform: skewY(-20deg);
   display: block;
   background-color: #D2E9E0;
   opacity: 0.5;
   border-style: solid;
   border-color: #98CEAE;
   border-width: 2px;
+  width: 24mm;
+  height: 100mm;
 }
 
 #GlasFront {
-  position: fixed;
   background: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
-  top: 29.7mm;
-  left: 115.2mm;
-  width: 24mm;
-  height: 100mm;
-  transform: skewY(-20deg);
   display: block;
   background-color: #D2E9E0;
   opacity: 0.5;
   border-style: solid;
   border-color: #98CEAE;
   border-width: 2px;
+  width: 24mm;
+  height: 100mm;
 }
 
 .bottom-26 {
