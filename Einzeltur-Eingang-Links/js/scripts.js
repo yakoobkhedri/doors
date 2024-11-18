@@ -24,7 +24,9 @@ function changeSize(input) {
   GlasRight.style.width = size_right + "mm";
   GlasRight.style.top = 58 + size_terstll - size_terst - size_terstR + "mm";
 
-  GlasLeft.style.top = 57 + size_terstR + "mm";
+  let left = 56.5;
+  if (document.getElementById("front").value < 400) left = 57;
+  GlasLeft.style.top = left + size_terstR + "mm";
   GlasLeft.style.right = 118 + size_front + "mm";
 
   // if(size_front > 15 && size_front <=26){ //Glasswidth 960-1000
