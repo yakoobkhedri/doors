@@ -1,16 +1,19 @@
 body {
   height: 100vh;
 }
-
-#GlasLeft {
+.galsessCont {
   position: fixed;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  transform: translate(-50%, -50%) skewY(-20deg);
+  transform-origin: center;
+}
+#GlasLeft {
   background: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
-  top: 18.4mm;
-  left: 147mm;
   width: 13mm;
   height: 100mm;
-  transform: skewY(-20deg);
   display: block;
   background-color: #D2E9E0;
   opacity: 0.5;
@@ -20,15 +23,11 @@ body {
 }
 
 #GlasRight {
-  position: fixed;
   background: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
-  top: 34.9mm;
-  left: 102.4mm;
   width: 13mm;
   height: 100mm;
-  transform: skewY(-20deg);
   display: block;
   background-color: #D2E9E0;
   opacity: 0.5;
@@ -38,16 +37,12 @@ body {
 }
 
 #GlasFront {
-  position: fixed;
   background: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
-  top: 29.7mm;
-  left: 115.2mm;
   width: 16mm;
   height: 100mm;
-  transform: skewY(-20deg);
   display: block;
   background-color: #D2E9E0;
   opacity: 0.5;
@@ -57,15 +52,11 @@ body {
 }
 
 #GlasFront2 {
-  position: fixed;
   background: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
-  top: 23.7mm;
-  left: 131mm;
   width: 16mm;
   height: 100mm;
-  transform: skewY(-20deg);
   display: block;
   background-color: #D2E9E0;
   opacity: 0.5;

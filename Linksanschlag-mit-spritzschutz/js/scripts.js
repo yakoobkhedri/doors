@@ -36,27 +36,27 @@ function changeSize() {
 
 
 
-    // if(size_front > 15 && size_front <=26){ //Glasswidth 960-1000
-    //         GlasLeft.style.top =53+size_terst/size_front/58 + 'mm';
-    //     }else if(size_front > 26 && size_front <=35){ //Glasswidth 300
-    //         GlasLeft.style.top =51+size_terst/size_front/58 + 'mm';
-    //     }else if(size_front > 35 && size_front <=42){ //Glasswidth 450-
-    //          GlasLeft.style.top =50+size_terst/size_front/58 + 'mm';
-    //     }else if(size_front > 42 && size_front <=50){ //Glasswidth 650-
-    //         GlasLeft.style.top =49+size_terst/size_front/58 + 'mm';
-    //     }else if(size_front > 50 && size_front <=58){ //Glasswidth 900-
-    //          GlasLeft.style.top =47+size_terst/size_front/58 + 'mm';
-    //     }else if(size_front > 58 && size_front <=66){ //Glasswidth 1100
-    //        GlasLeft.style.top =45+size_terst/size_front/58 + 'mm';
-    //     }else if(size_front > 66 && size_front <=73){ //Glasswidth 125ß
-    //         GlasLeft.style.top =43+size_terst/size_front/58 + 'mm';
-    //     }else if(size_front > 73 && size_front <=93){ //1370
-    //         GlasLeft.style.top =42+size_terst/size_front/58 + 'mm';
-    //     }else if(size_front > 93 && size_front <=113){ //1750
-    //         GlasLeft.style.top =40+size_terst/size_front/58 + 'mm';
-    //     }else if(size_front > 113 && size_front <=200){ //1750
-    //         GlasLeft.style.top =37+size_terst/size_front/58 + 'mm';
-    //     }
+    if(size_front > 15 && size_front <=26){ //Glasswidth 960-1000
+            GlasLeft.style.top =53+size_terst/size_front/58 + 'mm';
+        }else if(size_front > 26 && size_front <=35){ //Glasswidth 300
+            GlasLeft.style.top =55+size_terst/size_front/58 + 'mm';
+        }else if(size_front > 35 && size_front <=42){ //Glasswidth 450-
+             GlasLeft.style.top =50+size_terst/size_front/58 + 'mm';
+        }else if(size_front > 42 && size_front <=50){ //Glasswidth 650-
+            GlasLeft.style.top =49+size_terst/size_front/58 + 'mm';
+        }else if(size_front > 50 && size_front <=58){ //Glasswidth 900-
+             GlasLeft.style.top =47+size_terst/size_front/58 + 'mm';
+        }else if(size_front > 58 && size_front <=66){ //Glasswidth 1100
+           GlasLeft.style.top =45+size_terst/size_front/58 + 'mm';
+        }else if(size_front > 66 && size_front <=73){ //Glasswidth 125ß
+            GlasLeft.style.top =43+size_terst/size_front/58 + 'mm';
+        }else if(size_front > 73 && size_front <=93){ //1370
+            GlasLeft.style.top =42+size_terst/size_front/58 + 'mm';
+        }else if(size_front > 93 && size_front <=113){ //1750
+            GlasLeft.style.top =40+size_terst/size_front/58 + 'mm';
+        }else if(size_front > 113 && size_front <=200){ //1750
+            GlasLeft.style.top =37+size_terst/size_front/58 + 'mm';
+        }
 
 
     // boden2.style.top = size_height+56+size_terstR-size_hh + 'mm';

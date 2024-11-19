@@ -3,17 +3,23 @@ function changeSize() {
     // let size_www = parseInt(document.getElementById('www').value);
 
     let size_right = parseInt(document.getElementById('right').value);
+    let size_left = parseInt(document.getElementById('left').value);
     let size_front = parseInt(document.getElementById('front').value);
     var size_height = parseInt(document.getElementById('height').value);
 
 
     size_right = size_right / 19;
+    size_left = size_left / 19;
     size_front = size_front / 19;
     size_height = size_height / 18;
 
     GlasRight.style.width = size_right + 'mm';
     GlasRight.style.height = size_height + 'mm';
 
+    GlasLeft.style.width = size_left + 'mm';
+    GlasLeft.style.height = size_height + 'mm';
+
+    size_terstL = size_left / 5;
     size_terst = size_right / 5;
     size_terstR = size_front / 5;
 
