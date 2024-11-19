@@ -6,12 +6,16 @@ body {
   bottom: 26px;
 }
 
-#GlasLeft {
+#GlasLeft,
+#GlasRight,
+#GlasFront {
   position: fixed;
   background: rgb(220, 220, 230);
+}
+
+#GlasLeft {
   background-color: rgb(220, 220, 230);
-  top: 41.5mm;
-  bottom: 249px;
+  top: 58mm;
   right: 165mm;
   width: 47mm;
   height: 100mm;
@@ -25,11 +29,7 @@ body {
 }
 
 #GlasRight {
-  /* Wand rechts */
-  position: fixed;
-  background: rgb(220, 220, 230);
-  top: 24mm;
-  bottom: 249px;
+  top: 41mm;
   right: 118mm;
   width: 47mm;
   height: 100mm;
@@ -44,13 +44,13 @@ body {
 }
 
 #GlasFront {
-  position: fixed;
   background: rgb(220, 220, 230);
-  top: 41mm;
-  bottom: 249px;
+  background-color: rgb(220, 220, 230);
+  top: 50mm;
   right: 118mm;
   width: 47mm;
   height: 100mm;
+  top: 29.8%;
   transform: skewY(-20deg);
   display: block;
   background-color: #D2E9E0;

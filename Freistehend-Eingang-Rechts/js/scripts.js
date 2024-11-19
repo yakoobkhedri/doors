@@ -23,7 +23,7 @@ function changeSize() {
   GlasFront.style.height = size_height + "mm";
   GlasFront.style.width = size_front + "mm";
   let top = 58;
-  if (document.getElementById("front").value <= 700) top = 57.8;
+  if (document.getElementById("front").value <= 700) top = 56.8;
 
   GlasFront.style.top = top + size_terst + "mm";
 

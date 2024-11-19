@@ -6,10 +6,10 @@ body {
   /* Wand rechts */
   position: fixed;
   background: rgb(220, 220, 230);
-  top: 25mm;
+  top: 24mm;
   bottom: 249px;
   left: 78mm;
-  width: 16mm;
+  width: 12mm;
   height: 100mm;
   transform: skewY(-20deg);
   display: block;
@@ -28,7 +28,7 @@ body {
   top: 41mm;
   bottom: 249px;
   left: 125mm;
-  width: 16mm;
+  width: 12mm;
   height: 100mm;
   transform: skewY(-20deg);
   display: block;
@@ -44,12 +44,12 @@ body {
   position: fixed;
   background: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
-  top: 36mm;
+  top: 34.5mm;
   bottom: 249px;
   left: 78mm;
   width: 47mm;
   height: 100mm;
-  transform: skewY(19deg);
+  transform: skewY(20deg);
   display: block;
   background-color: #D2E9E0;
   opacity: 0.5;

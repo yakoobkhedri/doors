@@ -4,11 +4,13 @@ function changeSize() {
 
     let size_right = parseInt(document.getElementById('right').value);
     let size_front = parseInt(document.getElementById('front').value);
+    let size_left = parseInt(document.getElementById('left').value);
     var size_height = parseInt(document.getElementById('height').value);
 
 
     size_right = size_right / 19;
     size_front = size_front / 19;
+    size_left = size_left / 19;
     size_height = size_height / 18;
 
     GlasRight.style.width = size_right + 'mm';
@@ -16,13 +18,23 @@ function changeSize() {
 
     size_terst = size_right / 5;
     size_terstR = size_front / 5;
+    size_terstll = size_left / 5;
 
     GlasRight.style.top = 56 + size_terstR + 'mm';
-    GlasRight.style.left = 78 + size_front + 'mm';
+    GlasRight.style.left = 95 + size_front + size_left + 'mm';
 
     GlasFront.style.height = size_height + 'mm';
     GlasFront.style.width = size_front + 'mm';
     GlasFront.style.top = 56 + size_terst + 'mm';
+    GlasFront.style.left = 95 + size_left + 'mm';
+
+    // شیشه سمت چپ را باید تست بکنی وبراش ایف بزنی
+
+    GlasLeft.style.height = size_height + 'mm';
+    GlasLeft.style.width = size_left + 'mm';
+    GlasLeft.style.top = 57 + size_terst - size_terstll - size_terstR + 'mm';
+
+
 
 
     // if(size_front > 15 && size_front <=26){ //Glasswidth 960-1000
@@ -90,6 +102,21 @@ $(document).ready(function () {
 
     $('#right').on('change', function () {
         var width = $('#right').val();
+        if (width >= 150 && width <= 2200) {
+
+            changeSize()
+        } else {
+            alert('Bitte ein gültiges Maß eingeben. \nMinimalbreite: 500mm\nMaximalbreite: 1200mm')
+        }
+    });
+});
+
+
+
+// Tür Recht
+$(document).ready(function () {
+    $('#left').on('change', function () {
+        var width = $('#left').val();
         if (width >= 150 && width <= 2200) {
 
             changeSize()
