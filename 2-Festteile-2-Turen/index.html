@@ -21,13 +21,21 @@
             <p id="textaa" style="display:block">right glass in mm</br> (min. 150mm max. 1500mm)</p>
             <input min="150" max="1500" type="number" class="form-control width-input" name="width" id="right" />
           </div>
+            <div class="d-flex flex-column gap-2">
+            <p id="textaa" style="display:block">right 2 glass in mm</br> (min. 150mm max. 1500mm)</p>
+            <input min="150" max="1500" type="number" class="form-control width-input" name="width" id="right2" />
+          </div>
           <!-- front glass -->
           <div class="d-flex flex-column gap-2">
-            <p id="textaa" style="display:block">front glass in mm</br> (min. 150mm max. 1500mm)</p>
-            <input min="150" max="1500" type="number" class="form-control width-input" name="widthFL" id="front" />
+            <p id="textaa" style="display:block">left 2 glass in mm</br> (min. 150mm max. 1500mm)</p>
+            <input min="150" max="1500" type="number" class="form-control width-input" name="widthFL" id="left2" />
+          </div>
+            <div class="d-flex flex-column gap-2">
+            <p id="textaa" style="display:block">left glass in mm</br> (min. 150mm max. 1500mm)</p>
+            <input min="150" max="1500" type="number" class="form-control width-input" name="widthFL" id="left" />
           </div>
           <!-- left glass -->
-          <div class="d-flex flex-column gap-2">
+          <div class="d-none flex-column gap-2">
             <p id="textaa" style="display:block">left glass in mm</br> (min. 150mm max. 1500mm)</p>
             <input min="150" max="1500" style="display:block" type="number" class="form-control width-input"
               name="widthh" id="left" />
@@ -40,8 +48,7 @@
           </div>
       </div>
       <!--Bild Background-->
-      <div class="col-lg-9 d-flex align-items-center align-content-center" id="rightPanel">
-        <div class="galsessCont">
+      <div id="rightPanel">
           <div id="GlasLeft"></div>
           <div id="GlasFront"></div>
           <div id="GlasFront2"></div>
@@ -49,7 +56,6 @@
         </div>
         <h5 class="fw-bold text-center bottom-26 end-0 start-0 text-center position-absolute mb-5 pb-5">2 Festteile ,2 Turen
         </h5>
-      </div>
     </div>
   </div>
 

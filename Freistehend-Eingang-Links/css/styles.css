@@ -24,7 +24,7 @@ body {
   position: fixed;
   background: rgb(220, 220, 230);
   top: 19.7mm;
-  left: 113mm;
+  left: 118mm;
   width: 42mm;
   height: 100mm;
   transform: skewY(-20deg);
@@ -42,7 +42,7 @@ body {
   background: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
   top: 19.9mm;
-  right: 220mm;
+  left: 76mm;
   width: 42mm;
   height: 100mm;
   transform: skewY(19deg);

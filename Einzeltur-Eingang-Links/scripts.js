@@ -1,4 +1,4 @@
-function changeSize() {
+function changeSize(input) {
   // let size_www = parseInt(document.getElementById('www').value);
 
   let size_right = parseInt(document.getElementById("right").value);
@@ -9,21 +9,25 @@ function changeSize() {
   size_front = size_front / 19;
   size_height = size_height / 18;
 
-  GlasRight.style.width = size_right + "mm";
-  GlasRight.style.height = size_height + "mm";
+  GlasLeft.style.width = size_right + "mm";
+  GlasLeft.style.height = size_height + "mm";
 
   size_terst = size_right / 5;
   size_terstR = size_front / 5;
-
-  let top = 56;
-  if (document.getElementById("front").value >= 1000) top = 57;
-  GlasRight.style.top = 56 + size_terstR + "mm";
-  GlasRight.style.left = 74 + size_front + "mm";
+  size_terstll = size_right / 5;
 
   GlasFront.style.height = size_height + "mm";
   GlasFront.style.width = size_front + "mm";
+  GlasFront.style.top = 57 + size_terst + "mm";
 
-  GlasFront.style.top = top + size_terst + "mm";
+  GlasRight.style.height = size_height + "mm";
+  GlasRight.style.width = size_right + "mm";
+  GlasRight.style.top = 58 + size_terstll - size_terst - size_terstR + "mm";
+
+  let left = 56.5;
+  if (document.getElementById("front").value < 400) left = 57;
+  GlasLeft.style.top = left + size_terstR + "mm";
+  GlasLeft.style.right = 118 + size_front + "mm";
 
   // if(size_front > 15 && size_front <=26){ //Glasswidth 960-1000
   //         GlasLeft.style.top =53+size_terst/size_front/58 + 'mm';
@@ -83,7 +87,21 @@ $(document).ready(function () {
   $("#right").on("change", function () {
     var width = $("#right").val();
     if (width >= 150 && width <= 2200) {
-      changeSize();
+      changeSize(this);
+    } else {
+      alert(
+        "Bitte ein gültiges Maß eingeben. \nMinimalbreite: 500mm\nMaximalbreite: 1200mm"
+      );
+    }
+  });
+});
+
+// Tür Recht
+$(document).ready(function () {
+  $("#left").on("change", function () {
+    var width = $("#left").val();
+    if (width >= 150 && width <= 2200) {
+      changeSize(this);
     } else {
       alert(
         "Bitte ein gültiges Maß eingeben. \nMinimalbreite: 500mm\nMaximalbreite: 1200mm"

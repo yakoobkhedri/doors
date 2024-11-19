@@ -5,7 +5,7 @@ body {
 #GlasLeft {
   position: fixed;
   background: rgb(220, 220, 230);
-    background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
   top: 18mm;
   left: 67mm;
   width: 0;
