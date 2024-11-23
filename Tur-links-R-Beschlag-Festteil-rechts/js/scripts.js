@@ -100,3 +100,7 @@ $(document).ready(function () {
     }
   });
 });
+
+document.getElementById("left").value = 400;
+document.getElementById("front").value = 900;
+changeSize();

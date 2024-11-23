@@ -112,3 +112,7 @@ $(document).ready(function () {
         }
     });
 });
+
+document.getElementById("right").value = 900;
+document.getElementById("front").value = 900;
+changeSize();

@@ -12,7 +12,7 @@ body {
   width: 16mm;
   height: 100mm;
   transform: skewY(-20deg);
-  display: block;
+  display: none;
   background-color: #D2E9E0;
   opacity: 0.5;
   border-style: solid;

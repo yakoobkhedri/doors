@@ -126,3 +126,7 @@ function changeSize(input) {
     });
   });
   
+  document.getElementById("left").value = 200;
+  document.getElementById("right").value = 200;
+document.getElementById("front").value = 900;
+changeSize();

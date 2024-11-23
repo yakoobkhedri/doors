@@ -22,7 +22,7 @@ function changeSize(input) {
 
   GlasRight.style.height = size_height + "mm";
   GlasRight.style.width = size_right + "mm";
-  GlasRight.style.top = 60 + size_terstll - size_terst - size_terstR + "mm";
+  GlasRight.style.top = 58.8 + size_terstll - size_terst - size_terstR + "mm";
 
   let left = 57.5;
   if (document.getElementById("front").value < 400) left = 57;
@@ -123,3 +123,7 @@ $(document).ready(function () {
     }
   });
 });
+
+document.getElementById("right").value = 800;
+document.getElementById("front").value = 800;
+changeSize();

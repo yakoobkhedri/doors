@@ -125,3 +125,8 @@ $(document).ready(function () {
     }
   });
 });
+
+document.getElementById("right").value = 300;
+document.getElementById("left").value = 300;
+document.getElementById("front").value = 900;
+changeSize();

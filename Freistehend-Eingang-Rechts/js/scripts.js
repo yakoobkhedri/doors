@@ -14,7 +14,7 @@ function changeSize() {
 
   size_terst = size_right / 5;
   size_terstR = size_front / 5;
-  let top2 = 56.6;
+  let top2 = 57.6;
   if (document.getElementById("right").value < 400) top2 = 56;
 
   GlasRight.style.top = top2 + size_terstR + "mm";
@@ -107,3 +107,7 @@ $(document).ready(function () {
     }
   });
 });
+
+document.getElementById("right").value = 800;
+document.getElementById("front").value = 800;
+changeSize();

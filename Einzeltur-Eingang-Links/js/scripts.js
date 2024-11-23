@@ -18,7 +18,7 @@ function changeSize(input) {
 
   GlasFront.style.height = size_height + "mm";
   GlasFront.style.width = size_front + "mm";
-  GlasFront.style.top = 57 + size_terst + "mm";
+  GlasFront.style.top = 56 + size_terst + "mm";
 
   GlasRight.style.height = size_height + "mm";
   GlasRight.style.width = size_right + "mm";
@@ -123,3 +123,7 @@ $(document).ready(function () {
     }
   });
 });
+
+document.getElementById("right").value = 800;
+document.getElementById("front").value = 800;
+changeSize();

@@ -87,3 +87,6 @@ $(document).ready(function () {
         }
     });
 });
+
+document.getElementById("front").value = 1200;
+changeSize();

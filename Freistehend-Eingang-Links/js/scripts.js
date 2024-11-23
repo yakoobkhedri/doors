@@ -102,3 +102,7 @@ $(document).ready(function () {
     }
   });
 });
+
+document.getElementById("right").value = 800;
+document.getElementById("front").value = 800;
+changeSize();

@@ -7,7 +7,7 @@ body {
   background: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
-  top: 14.5mm;
+  top: 40.5mm;
   left: 81.4mm;
   width: 25mm;
   height: 100mm;
@@ -36,7 +36,8 @@ body {
   border-color: #98CEAE;
   border-width: 2px;
 }
-#GlasRight2{
+
+#GlasRight2 {
   top: 15.3mm;
   left: 155.263mm;
   position: fixed;
