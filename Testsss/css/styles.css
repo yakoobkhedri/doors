@@ -54,7 +54,7 @@ body {
 .handleDoor{
   position: absolute;
   top: 47%;
-  left: 5px;
+  left: -5px;
 }
 #GlasFront::before {
   content: url('../hinge\(1\).png');
