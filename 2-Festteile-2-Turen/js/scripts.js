@@ -135,3 +135,9 @@ $(document).ready(function () {
     }
   });
 });
+
+document.getElementById("right").value = 300;
+document.getElementById("right2").value = 300;
+document.getElementById("left").value = 300;
+document.getElementById("left2").value = 300;
+changeSize();

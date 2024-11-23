@@ -61,3 +61,7 @@ $(document).ready(function () {
     }
   });
 });
+
+document.getElementById("left").value = 600;
+document.getElementById("front").value = 600;
+changeSize();
