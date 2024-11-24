@@ -1,48 +1,35 @@
 function changeSize() {
   // let size_www = parseInt(document.getElementById('www').value);
 
-  let size_left = parseInt(document.getElementById("left").value);
   let size_right = parseInt(document.getElementById("right").value);
   let size_front = parseInt(document.getElementById("front").value);
-  let size_front2 = parseInt(document.getElementById("front2").value);
+  let size_left = parseInt(document.getElementById("left").value);
   var size_height = parseInt(document.getElementById("height").value);
 
   size_right = size_right / 19;
-  size_left = size_left / 19;
   size_front = size_front / 19;
-  size_front2 = size_front2 / 19;
+  size_left = size_left / 19;
   size_height = size_height / 18;
-
-  size_terstL = size_left / 5;
-  size_terst = size_right / 5;
-  size_terstR = size_front / 5;
 
   GlasRight.style.width = size_right + "mm";
   GlasRight.style.height = size_height + "mm";
 
-  GlasLeft.style.width = size_left + "mm";
-  GlasLeft.style.height = size_height + "mm";
-  // GlasLeft.style.top = 41 + size_terstR + "mm";
+  size_terst = size_right / 5;
+  size_terstR = size_front / 5;
+  size_terstll = size_left / 5;
 
-  let frontT = 21
-  if (left.value > 150) frontT = 22;
-  let rightT =right.value/90
-
-  GlasRight.style.top =frontT + size_terstL-rightT + "mm";
-  let rightL = 116;
-  GlasRight.style.left = rightL + size_front+size_front2 + size_left - 76 + "mm";
+  // GlasRight.style.top = 56 + size_terstR + 'mm';
+  // GlasRight.style.left = 78 + size_front + 'mm';
 
   GlasFront.style.height = size_height + "mm";
   GlasFront.style.width = size_front + "mm";
+  // GlasFront.style.top = 56 + size_terst + 'mm';
 
-  GlasFront.style.top = frontT + size_terstL + "mm";
-  GlasFront2.style.left =  size_left+40 + "mm";
-  GlasFront.style.left =   size_front2+size_left+40 + "mm";
-  
-  GlasFront2.style.height = size_height + "mm";
-  GlasFront2.style.width = size_front2 + "mm";
+  // شیشه سمت چپ را باید تست بکنی وبراش ایف بزنی
 
-  GlasFront2.style.top = frontT + size_terstL + "mm";
+  GlasLeft.style.height = size_height + "mm";
+  GlasLeft.style.width = size_left + "mm";
+  // GlasLeft.style.top = 58 + size_terst - size_terstll - size_terstR + 'mm';
 
   // if(size_front > 15 && size_front <=26){ //Glasswidth 960-1000
   //         GlasLeft.style.top =53+size_terst/size_front/58 + 'mm';
@@ -111,6 +98,7 @@ $(document).ready(function () {
   });
 });
 
+// Tür Recht
 $(document).ready(function () {
   $("#left").on("change", function () {
     var width = $("#left").val();
@@ -136,20 +124,9 @@ $(document).ready(function () {
       );
     }
   });
-});$(document).ready(function () {
-  $("#front2").on("change", function () {
-    var width = $("#front2").val();
-    if (width >= 150 && width <= 2200) {
-      changeSize();
-    } else {
-      alert(
-        "Bitte ein gültiges Maß eingeben. \nMinimalbreite: 300mm\nMaximalbreite: 1200mm"
-      );
-    }
-  });
 });
-document.getElementById("left").value=1500
-document.getElementById("right").value=1500
-document.getElementById("front").value=800
-document.getElementById("front2").value=800
-changeSize()
+
+document.getElementById("right").value = 1200;
+document.getElementById("left").value = 1200;
+document.getElementById("front").value = 900;
+changeSize();

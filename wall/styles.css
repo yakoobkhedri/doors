@@ -2,30 +2,20 @@ body {
   height: 100vh;
 }
 
-#GlasLeft {
-  /* Wand rechts */
+#rightPanel {
   position: fixed;
-  background: rgb(220, 220, 230);
-  top: 25mm;
-  left: 78mm;
-  width: 16mm;
-  height: 100mm;
-  display: block;
-  background-color: #D2E9E0;
-  opacity: 0.5;
-  border-style: solid;
-  border-color: #98CEAE;
-  border-width: 2px;
-  /* transform: matrix(3, 0, 0, 1.10, 0, 0); */
+  top: 50%;
+  left: 50%;
+  display: flex;
+  transform: translate(-50%, -50%) skewY(-20deg);
+  transform-origin: center;
+  width: max-content;
 }
 
 #GlasRight {
-  /* Wand rechts */
-  position: fixed;
   background: rgb(220, 220, 230);
-  top: 41mm;
-  left: 125mm;
-  width: 16mm;
+  background-color: rgb(220, 220, 230);
+  width: 13mm;
   height: 100mm;
   display: block;
   background-color: #D2E9E0;
@@ -33,16 +23,28 @@ body {
   border-style: solid;
   border-color: #98CEAE;
   border-width: 2px;
-  /* transform: matrix(3, 0, 0, 1.10, 0, 0); */
+}
+
+#GlasLeft {
+  background: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  width: 13mm;
+  height: 100mm;
+  display: block;
+  background-color: #D2E9E0;
+  opacity: 0.5;
+  border-style: solid;
+  border-color: #98CEAE;
+  border-width: 2px;
 }
 
 #GlasFront {
-  position: fixed;
   background: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
-  top: 36mm;
-  right: 168mm;
-  width: 47mm;
+  background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  width: 32mm;
   height: 100mm;
   display: block;
   background-color: #D2E9E0;
@@ -51,6 +53,23 @@ body {
   border-color: #98CEAE;
   border-width: 2px;
 }
+
+#GlasFront2 {
+  background: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  top: 23.7mm;
+  left: 131mm;
+  width: 0;
+  height: 0;
+  display: block;
+  background-color: #D2E9E0;
+  opacity: 0.5;
+  border-style: solid;
+  border-color: #98CEAE;
+  border-width: 2px;
+}
+
 .handleDoor{
   position: absolute;
   top: 47%;
@@ -68,6 +87,7 @@ body {
   top: 82%;
   right: -13px;
 }
+
 .bottom-26 {
   bottom: 26px;
 }

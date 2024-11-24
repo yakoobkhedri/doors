@@ -11,25 +11,24 @@ function changeSize() {
   size_left = size_left / 19;
   size_height = size_height / 18;
 
-  GlasLeft.style.width = size_left + "mm";
-  GlasLeft.style.height = size_height + "mm";
+  GlasRight.style.width = size_right + "mm";
+  GlasRight.style.height = size_height + "mm";
 
   size_terst = size_right / 5;
-  size_terstR = size_front / 5;
   size_terstL = size_left / 5;
-  // size_terstL - size_terst - left.value / 1500 + 32
+  size_terstR = size_front / 5;
 
-  GlasRight.style.height = size_height + "mm";
-  GlasRight.style.width = size_right + "mm";
-  GlasRight.style.top = size_terst + 20 + "mm";
+  GlasRight.style.top =
+    size_left / 5.9 - size_terstR / 0.5 - size_right / 5.6 + 38 + "mm";
+  GlasRight.style.left = size_left + size_front + 66 + "mm";
 
   GlasFront.style.height = size_height + "mm";
   GlasFront.style.width = size_front + "mm";
-  GlasFront.style.top = size_terst + 20 + "mm";
-  GlasFront.style.left = size_left + 20 + "mm";
+  GlasFront.style.top = size_left / 5.8 - size_terstR + 38 + "mm";
+  GlasFront.style.left = size_left + 66 + "mm";
 
-  GlasLeft.style.top = size_terst + size_terstR - size_terstL + 20 + "mm";
-  GlasLeft.style.right = size_front + size_right + 40 + "mm";
+  GlasLeft.style.width = size_left + "mm";
+  GlasLeft.style.height = size_height + "mm";
 
   // if(size_front > 15 && size_front <=26){ //Glasswidth 960-1000
   //         GlasLeft.style.top =53+size_terst/size_front/58 + 'mm';
@@ -124,7 +123,7 @@ $(document).ready(function () {
     }
   });
 });
-document.getElementById("left").value = 1500;
-document.getElementById("right").value = 1500;
-document.getElementById("front").value = 800;
+document.getElementById("right").value = 500;
+document.getElementById("front").value = 500;
+document.getElementById("left").value = 500;
 changeSize();

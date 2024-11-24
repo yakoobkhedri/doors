@@ -61,12 +61,12 @@ body {
   background: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
   top: 25.4mm;
-  left: 141mm;
-  width: 33mm;
+  width: 32mm;
   height: 100mm;
-  transform: skewY(0deg);
   display: block;
+  transform-origin: 100%;
   background-color: #D2E9E0;
   opacity: 0.5;
   border-style: solid;

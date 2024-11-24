@@ -16,7 +16,7 @@ body {
 #GlasLeft {
   background-color: rgb(220, 220, 230);
   top: 62mm;
-  right: 155mm;
+  left: 155mm;
   width: 47mm;
   height: 100mm;
   transform: skewY(19deg);
@@ -30,7 +30,7 @@ body {
 
 #GlasRight {
   top: 48mm;
-  right: 118mm;
+  left: 118mm;
   width: 47mm;
   height: 100mm;
   transform: skewY(20deg);
@@ -45,7 +45,7 @@ body {
 
 #GlasFront {
   background: rgb(220, 220, 230);
-  right: 118mm;
+  left: 118mm;
   width: 19mm;
   height: 100mm;
   top: 31%;
@@ -58,21 +58,21 @@ body {
   border-width: 2px;
 }
 
-  #GlasFront2 {
-    position: fixed;
-    background: rgb(220, 220, 230);
-    background-color: rgb(220, 220, 230);
-    background-color: rgb(220, 220, 230);
-    background-color: rgb(220, 220, 230);
-    top: 67.2mm;
-    right: 136.4mm;
-    width: 19mm;
-    height: 100mm;
-    transform: skewY(-20deg);
-    display: block;
-    background-color: #D2E9E0;
-    opacity: 0.5;
-    border-style: solid;
-    border-color: #98CEAE;
-    border-width: 2px;
-  }
+#GlasFront2 {
+  position: fixed;
+  background: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  top: 67.2mm;
+  left: 155mm;
+  width: 19mm;
+  height: 100mm;
+  transform: skewY(-20deg);
+  display: block;
+  background-color: #D2E9E0;
+  opacity: 0.5;
+  border-style: solid;
+  border-color: #98CEAE;
+  border-width: 2px;
+}

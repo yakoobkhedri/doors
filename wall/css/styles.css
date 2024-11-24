@@ -1,0 +1,70 @@
+body {
+  height: 100vh;
+}
+
+#rightPanel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  transform: translate(-70%, -59%) skewY(10deg);
+  transform-origin: center;
+  width: max-content;
+  border-top: 118px solid #f9f9f9;
+  padding: 0;
+}
+
+#GlasRight {
+  width: 13mm;
+  height: 100mm;
+  display: block;
+  background-color: #F5F5F5;
+  opacity: 0.5;
+  border-style: solid;
+  border-color: #B1B1B1;
+  border-bottom: 0;
+}
+
+#GlasLeft {
+  width: 13mm;
+  height: 100mm;
+  display: block;
+  background-color: #F5F5F5;
+  opacity: 0.5;
+  border-style: solid;
+  border-color: #B1B1B1;
+  border-bottom: 0;
+}
+
+#GlasFront {
+  width: 32mm;
+  height: 100mm;
+  display: block;
+  background-color: #D2E9E0;
+  opacity: 0.5;
+  border: 13px solid #FEFEFE;
+  position: relative;
+  border-bottom: 0;
+  border-top: 13px solid #B1B1B1;
+}
+.handleDoor{
+  position: absolute;
+  top: 47%;
+  left: -5px;
+}
+#GlasFront::before {
+  content: url('../hinge\(1\).png');
+  position: absolute;
+  top: 12%;
+  right: -8px;
+}
+#GlasFront::after {
+  content: url('../hinge\(1\).png');
+  position: absolute;
+  top: 82%;
+  right: -8px;
+}
+
+.bottom-26 {
+  bottom: 26px;
+}
