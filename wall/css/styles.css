@@ -23,6 +23,29 @@ body {
   height: 4px;
   background-color: #b1b1b1;
 }
+#rightPanel::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: -113px;
+  width: 99%;
+  height: 118px;
+  background-image: url('../wall.jpg');
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+#rightPanel #ground{
+  position: absolute;
+  background-image: url('../Boden.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  bottom: -199px;
+}
 #GlasRight {
   position: relative;
   width: 13mm;
@@ -36,6 +59,7 @@ body {
   background-image: url('../wall.jpg');
   background-position: center;
   background-size: cover;
+  z-index: 10;
 }
 #GlasRight::before {
   position: absolute;
@@ -68,6 +92,7 @@ body {
   background-image: url('../wall.jpg');
   background-position: center;
   background-size: cover;
+  z-index: 10;
 }
 #GlasLeft::before {
   position: absolute;
@@ -92,7 +117,7 @@ body {
   height: 100mm;
   display: block;
   opacity: 1;
-  border: 13px solid black;
+  border: 13px solid #555050;
   border-bottom: 0;
   position: relative;
   margin-left: 4px;
@@ -100,15 +125,17 @@ body {
   background-image: url('../IMG_20241126_180043_598.jpg');
   background-position: center;
   background-size: cover;
+  z-index: 10;
 }
-#GlasFront::before {
-  content: url('../hinge\(1\).png');
+#GlasFront #Layer_1 {
   position: absolute;
+  width: 20px;
+  transform: rotate(180deg);
   top: 12%;
   right: -8px;
 }
-#GlasFront::after {
-  content: url('../hinge\(1\).png');
+#GlasFront #Layer_3 {
+  width: 20px;
   position: absolute;
   top: 82%;
   right: -8px;
@@ -156,12 +183,12 @@ body {
   -webkit-backdrop-filter: blur( 1px );
   opacity: 1;
 }
-.handleDoor{
+#Layer_2{
   position: absolute;
   top: 47%;
   left: -5px;
+  width: 51px;
 }
-
 .bottom-26 {
   bottom: 26px;
 }

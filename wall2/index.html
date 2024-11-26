@@ -17,9 +17,13 @@
         <form class="d-flex flex-column gap-3 border-1 border p-3 rounded">
           <p>Steel | Line Variante 2</p>
           <!-- right glass -->
-          <div class="d-none flex-column gap-2">
-            <p id="textaa" style="display:block">left glass in mm</br> (min. 150mm max. 1500mm)</p>
+          <div class="d-flex flex-column gap-2">
+            <p id="textaa" style="display:block">right glass in mm</br> (min. 150mm max. 1500mm)</p>
             <input min="150" max="1500" type="number" class="form-control width-input" name="width" id="right" />
+          </div>
+           <div class="d-flex flex-column gap-2">
+            <p id="textaa" style="display:block">right glass in mm</br> (min. 150mm max. 1500mm)</p>
+            <input min="150" max="1500" type="number" class="form-control width-input" name="width" id="right2" />
           </div>
           <!-- front glass -->
           <div class="d-flex flex-column gap-2">
@@ -27,8 +31,8 @@
             <input min="150" max="1500" type="number" class="form-control width-input" name="widthFL" id="front" />
           </div>
           <!-- left glass -->
-          <div class="d-none flex-column gap-2">
-            <p id="textaa" style="display:block">right glass in mm</br> (min. 150mm max. 1500mm)</p>
+          <div class="d-flex flex-column gap-2">
+            <p id="textaa" style="display:block">left glass in mm</br> (min. 150mm max. 1500mm)</p>
             <input min="150" max="1500" style="display:block" type="number" class="form-control width-input"
               name="widthh" id="left" />
           </div>
@@ -40,10 +44,11 @@
           </div>
       </div>
       <!--Bild Background-->
-        <div id="rightPanel">
-          <div id="ground"></div>
-          <div id="GlasLeft"></div>
-          <div id="GlasFront">
+      <div class="col-lg-9 d-flex align-items-center align-content-center position-relative" id="rightPanel">
+        <div id="ground"></div>
+              <div id="GlasLeft"></div>
+          <div id="GlasFront"></div>
+          <div id="GlasRight">
             <div id="line"></div>
             <svg id="Layer_1" data-name="Layer 2" class="position-absolute" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 59.32 69.18">
               <defs>
@@ -166,10 +171,12 @@
             <div id="Glass">
             </div>
           </div>
-          <div id="GlasRight"></div>
-        </div>
+          <div id="GlasRight2"></div>
+            <h5 class="fw-bold text-center bottom-26 end-0 start-0 text-center position-absolute mb-5 pb-5">
+          Festteil-links-Tur-und-Festteil-rechts
+        </h5>
+      </div>
     </div>
-  </div>
   </div>
 
   <script src="js/jquery-3.7.1.min.js"></script>

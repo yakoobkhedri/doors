@@ -1,0 +1,170 @@
+body {
+  height: 100vh;
+}
+#rightPanel #ground{
+
+}
+#GlasLeft {
+  position: fixed;
+  background: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  top: 31.2mm;
+  left: 60.4mm;
+  width: 46mm;
+  height: 100mm;
+  transform: skewY(-20deg);
+  display: block;
+  background-color: #D2E9E0;
+  border-style: solid;
+  border-color: #b3b4ba;
+  border-width: 2px;
+  background-image: url('../img/wall.jpg');
+  background-position: center;
+  background-size: contain;
+}
+
+#GlasRight,
+#GlasRight2 {
+  position: fixed;
+  background: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  top: 23.1mm;
+  right: 151mm;
+  width: 19mm;
+  height: 100mm;
+  transform: skewY(20deg);
+  display: block;
+  background-color: #D2E9E0;
+  border-style: solid;
+  border-color: #b3b4ba;
+  border-width: 2px;
+}
+#GlasRight2{
+  background-image: url('../img/wall.jpg');
+  background-position: center;
+  background-size: contain;
+  border-left: 4px solid #acadaf;
+  transform: translateX(8px) skewY(20deg);
+  border-top: 0;
+}
+#GlasRight2::after {
+  position: absolute;
+  content: '';
+  left: -4px;
+  top: -9px;
+  width: 4px;
+  height: 6%;
+  background-color: #b1b1b1;
+}
+#GlasRight{
+  display: block;
+  opacity: 1;
+  border: 13px solid #555050;
+  border-bottom: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  background-image: url('../img/IMG_20241126_180043_598.jpg');
+  background-position: center;
+  background-size: cover;
+  z-index: 10;
+}
+#GlasRight #line::after{
+  position: absolute;
+  content: '';
+  right: -21px;
+  top: 0px;
+  width: 100%;
+  height: 4px;
+  background-color: #b1b1b1;
+}
+#GlasRight #line::before{
+  position: absolute;
+  content: '';
+  left: -21px;
+  top: 0px;
+  width: 100%;
+  height: 4px;
+  background-color: #b1b1b1;
+}
+#GlasRight #Layer_1 {
+  position: absolute;
+  width: 20px;
+  transform: rotate(180deg);
+  top: 12%;
+  right: -8px;
+}
+#GlasRight #Layer_2{
+  position: absolute;
+  top: 47%;
+  left: -5px;
+  width: 51px;
+}
+#GlasRight #Layer_3 {
+  width: 20px;
+  position: absolute;
+  top: 82%;
+  right: -8px;
+}
+#GlasRight #line{
+  position: absolute;
+  content: '';
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-left: auto;
+  top: -21px;
+  width: 100%;
+  height: 4px;
+  background-color: #b1b1b1;
+}
+#GlasRight #Glass {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background:
+  linear-gradient(90deg, rgba(255,255,255,.13) 1%, transparent 0%) 0px 0,
+  rgba( 155, 255, 255, 0.19 );
+  background-size: 16px 18px;
+  box-shadow: 0 3px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.1px );
+  -webkit-backdrop-filter: blur( 1px );
+  opacity: 1;
+}
+#GlasFront {
+  position: fixed;
+  background: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  background-color: rgb(220, 220, 230);
+  top: 33.2mm;
+  left: 106.2mm;
+  width: 38mm;
+  height: 100mm;
+  transform: skewY(20deg);
+  display: block;
+  background-color: #D2E9E0;
+  border-style: solid;
+  border-color: #b3b4ba;
+  border-width: 2px;
+  border-right: 4px solid #acadaf;
+  background-image: url('../img/wall.jpg');
+  background-position: center;
+  background-size: contain;
+  border-top: 0;
+}
+#GlasFront::after {
+  position: absolute;
+  content: '';
+  right: -4px;
+  top: -9px;
+  width: 4px;
+  height: 6%;
+  background-color: #b1b1b1;
+}
+.bottom-26 {
+  bottom: 26px;
+}
