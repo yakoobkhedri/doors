@@ -33,7 +33,7 @@ body {
   background-image: url('../img/wall.jpg');
   background-position: center;
   background-size: contain;
-  border-right: 2px solid #acadaf;
+  border-right: 4px solid #b3b4ba;
 }
 #GlasRight,
 #GlasRight2 {

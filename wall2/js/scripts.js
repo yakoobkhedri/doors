@@ -11,8 +11,7 @@ function changeSize() {
   size_left = size_left / 19;
   size_height = size_height / 18;
 
-  ground.style.width = ground.style.width + size_right  + "mm";
-
+  
   GlasRight.style.width = size_right + "mm";
   GlasRight.style.height = size_height + "mm";
 
@@ -22,7 +21,7 @@ function changeSize() {
   size_terst = size_right / 5;
   size_terstR = size_front / 5;
   size_terstll = size_left / 5;
-
+  
   GlasRight2.style.top =
     -size_left / 5.5 +
     size_front / 2.8 +
@@ -33,18 +32,23 @@ function changeSize() {
   GlasRight2.style.left = 59 + size_front + size_left + size_right + "mm";
 
   GlasRight.style.top =
-    -size_left / 5.5 + size_front / 2.8 + size_right / 5.5 + 31 + "mm";
+  -size_left / 5.5 + size_front / 2.8 + size_right / 5.5 + 31 + "mm";
   GlasRight.style.left = 59 + size_front + size_left + "mm";
 
   GlasFront.style.height = size_height + "mm";
   GlasFront.style.width = size_front + "mm";
   GlasFront.style.top = -size_left / 5.5 + size_front / 5.5 + 31 + "mm";
   GlasFront.style.left = size_left + 59 + "mm";
-
+  
   // شیشه سمت چپ را باید تست بکنی وبراش ایف بزنی
-
+  
   GlasLeft.style.height = size_height + "mm";
   GlasLeft.style.width = size_left + "mm";
+
+
+  ground.style.width = size_left + size_right + size_right2 + "mm";
+  
+
 
   // if(size_front > 15 && size_front <=26){ //Glasswidth 960-1000
   //         GlasLeft.style.top =53+size_terst/size_front/58 + 'mm';
