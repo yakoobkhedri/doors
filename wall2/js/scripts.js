@@ -11,6 +11,8 @@ function changeSize() {
   size_left = size_left / 19;
   size_height = size_height / 18;
 
+  ground.style.width = ground.style.width + size_right  + "mm";
+
   GlasRight.style.width = size_right + "mm";
   GlasRight.style.height = size_height + "mm";
 
@@ -28,16 +30,16 @@ function changeSize() {
     size_right2 / 5.5 +
     31 +
     "mm";
-  GlasRight2.style.left = 60 + size_front + size_left + size_right + "mm";
+  GlasRight2.style.left = 59 + size_front + size_left + size_right + "mm";
 
   GlasRight.style.top =
     -size_left / 5.5 + size_front / 2.8 + size_right / 5.5 + 31 + "mm";
-  GlasRight.style.left = 60 + size_front + size_left + "mm";
+  GlasRight.style.left = 59 + size_front + size_left + "mm";
 
   GlasFront.style.height = size_height + "mm";
   GlasFront.style.width = size_front + "mm";
   GlasFront.style.top = -size_left / 5.5 + size_front / 5.5 + 31 + "mm";
-  GlasFront.style.left = size_left + 60 + "mm";
+  GlasFront.style.left = size_left + 59 + "mm";
 
   // شیشه سمت چپ را باید تست بکنی وبراش ایف بزنی
 

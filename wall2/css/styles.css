@@ -1,20 +1,17 @@
 body {
   height: 100vh;
 }
-#rightPanel #ground{
-
-}
 #GlasLeft {
   position: fixed;
   background: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
   background-color: rgb(220, 220, 230);
-  top: 31.2mm;
+  top: 39.2mm;
   left: 60.4mm;
   width: 46mm;
   height: 100mm;
-  transform: skewY(-20deg);
+  transform: skewY(-31deg);
   display: block;
   background-color: #D2E9E0;
   border-style: solid;
@@ -23,8 +20,21 @@ body {
   background-image: url('../img/wall.jpg');
   background-position: center;
   background-size: contain;
+  border-left: 0;
 }
-
+#GlasLeft::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: -110px;
+  width: 100%;
+  height: 111px;
+  background-image: url('../img/wall.jpg');
+  background-position: center;
+  background-size: contain;
+  border-right: 2px solid #acadaf;
+}
 #GlasRight,
 #GlasRight2 {
   position: fixed;
@@ -49,12 +59,25 @@ body {
   border-left: 4px solid #acadaf;
   transform: translateX(8px) skewY(20deg);
   border-top: 0;
+  border-right: 0;
+}
+#GlasRight2::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: -108px;
+  width: 100%;
+  height: 109px;
+  background-image: url('../img/wall.jpg');
+  background-position: center;
+  background-size: contain;
 }
 #GlasRight2::after {
   position: absolute;
   content: '';
   left: -4px;
-  top: -9px;
+  top: -8px;
   width: 4px;
   height: 6%;
   background-color: #b1b1b1;
@@ -62,7 +85,7 @@ body {
 #GlasRight{
   display: block;
   opacity: 1;
-  border: 13px solid #555050;
+  border: 13px solid black;
   border-bottom: 0;
   margin-left: 4px;
   margin-right: 4px;
@@ -70,6 +93,32 @@ body {
   background-position: center;
   background-size: cover;
   z-index: 10;
+}
+#ground{
+  position: absolute;
+  content: '';
+  left: -344px;
+  right: auto;
+  bottom: -289px;
+  width: 100%;
+  height: 79%;
+  background-image: url('../img/Boden.jpg');
+  background-position: center;
+  background-size: cover;
+  border-right: 2px solid #acadaf;
+  transform: skew(-46deg);
+}
+#GlasRight::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: -21px;
+  top: -121px;
+  width: calc(100% + 57px);
+  height: 100px;
+  background-image: url('../img/wall.jpg');
+  background-position: center;
+  background-size: contain;
 }
 #GlasRight #line::after{
   position: absolute;
@@ -89,25 +138,6 @@ body {
   height: 4px;
   background-color: #b1b1b1;
 }
-#GlasRight #Layer_1 {
-  position: absolute;
-  width: 20px;
-  transform: rotate(180deg);
-  top: 12%;
-  right: -8px;
-}
-#GlasRight #Layer_2{
-  position: absolute;
-  top: 47%;
-  left: -5px;
-  width: 51px;
-}
-#GlasRight #Layer_3 {
-  width: 20px;
-  position: absolute;
-  top: 82%;
-  right: -8px;
-}
 #GlasRight #line{
   position: absolute;
   content: '';
@@ -119,6 +149,26 @@ body {
   width: 100%;
   height: 4px;
   background-color: #b1b1b1;
+}
+#GlasRight #Glass #Layer_1 {
+  position: absolute;
+  width: 20px;
+  transform: rotate(180deg);
+  top: 12%;
+  right: -8px;
+}
+#GlasRight #Glass #Layer_2{
+  top: 47%;
+  left: -9px;
+  width: 51px;
+  z-index: 10;
+}
+#GlasRight #Glass #Layer_3 {
+  width: 20px;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 82%;
+  right: -8px;
 }
 #GlasRight #Glass {
   position: relative;
@@ -132,6 +182,8 @@ body {
   backdrop-filter: blur( 0.1px );
   -webkit-backdrop-filter: blur( 1px );
   opacity: 1;
+  border: 2px solid rgb(0, 234, 234);
+  transform-origin: right;
 }
 #GlasFront {
   position: fixed;
@@ -164,6 +216,18 @@ body {
   width: 4px;
   height: 6%;
   background-color: #b1b1b1;
+}
+#GlasFront::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: -110px;
+  width: 100%;
+  height: 111px;
+  background-image: url('../img/wall.jpg');
+  background-position: center;
+  background-size: contain;
 }
 .bottom-26 {
   bottom: 26px;
